@@ -18,7 +18,7 @@ class ProductApiApplicationTests {
 
         int result = 2+2;
 
-        assertEquals(4, result);
+        assertEquals(8, result);
     }
 
 }
