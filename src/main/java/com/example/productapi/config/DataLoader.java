@@ -17,7 +17,7 @@ public class DataLoader {
             if (productRepository.existsById(42L)){
                 return;
             }else{
-                Product product = new Product(42L,"Tangentbord",500.0);
+                Product product = new Product(42L,"Trådlöst tangentbord Graphite ",500.0);
                 productRepository.save(product);
             }
         };
