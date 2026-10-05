@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -32,5 +33,9 @@ public class ProductService {
 
         return new ProductDto(productId,productName,productPrice);
 
+    }
+
+    public List<Product> getAllProducts(){
+        return productRepository.findAll();
     }
 }
